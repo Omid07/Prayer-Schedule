@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_location"
+        android:id="@+id/current_city"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/current_city_name"
+        android:layout_alignBottom="@+id/current_city"
+        android:layout_toRightOf="@+id/current_city"
+        android:layout_toEndOf="@+id/current_city"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:hint="City Name"
+        android:text="Dhaka"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current_city"
+        android:text="Temperature"
+        android:id="@+id/temp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/temp"
+        android:layout_toRightOf="@+id/temp"
+        android:layout_toEndOf="@+id/temp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:hint="Tempareture"
+        android:id="@+id/temp_city"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp"
+        android:text="Prayer Time Schedual"
+        android:id="@+id/txt_prayer"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:layout_below="@+id/txt_prayer"
+        android:text="Date"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/date"
+        android:layout_toRightOf="@+id/date"
+        android:layout_toEndOf="@+id/date"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:hint="date"
+        android:id="@+id/date1"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fajr"
+        android:layout_below="@+id/date"
+        android:text="Fajr"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fajr"
+        android:layout_toRightOf="@+id/fajr"
+        android:layout_toEndOf="@+id/fajr"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:hint="fajr time"
+        android:id="@+id/fajr1"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dhuhr"
+        android:layout_below="@+id/fajr"
+        android:text="Dhuhr"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dhuhr"
+        android:layout_toRightOf="@+id/dhuhr"
+        android:layout_toEndOf="@+id/dhuhr"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:hint="dhuhr time"
+        android:id="@+id/dhuhr1"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/asr"
+        android:layout_below="@+id/dhuhr"
+        android:text="Asr"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/asr"
+        android:layout_toRightOf="@+id/asr"
+        android:layout_toEndOf="@+id/asr"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:hint="asr time"
+        android:id="@+id/asr1"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maghrib"
+        android:layout_below="@+id/asr"
+        android:text="Maghrib"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/maghrib"
+        android:layout_toRightOf="@+id/maghrib"
+        android:layout_toEndOf="@+id/maghrib"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:hint="maghrib time"
+        android:id="@+id/maghrib1"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/isha"
+        android:layout_below="@+id/maghrib"
+        android:text="Isha"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/isha"
+        android:layout_toRightOf="@+id/isha"
+        android:layout_toEndOf="@+id/isha"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:hint="isha time"
+        android:id="@+id/isha1"
+        android:textColor="@android:color/black"/>
+</RelativeLayout>
